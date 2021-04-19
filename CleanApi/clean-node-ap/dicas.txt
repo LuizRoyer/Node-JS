@@ -1,0 +1,11 @@
+git init
+npm init --y
+npm i -D git-commit-msg-linter  // Padronizar os logs do Git
+npm i -D typescript @types/node  // add typescript 
+npm install --save-dev eslint@7 eslint-plugin-standard@4 eslint-plugin-promise@4 eslint-plugin-import@2 eslint-plugin-node@11 @typescript-eslint/eslint-plugin@3 eslint-config-standard-with-typescript  // padronizar nomenclatura 
+npm i -D husky // auxilia nos comandos para testar o commit
+npm i -D lint-staged // rodar apenas arquivos alterados para teste
+npm i -D jest @types/jest ts-jest //para testes unitarios
+npm install jest --global  // rodar o jest --init na maquina
+npm i -g npm-check // valida se tem versao nova das dependencias do projeto
+npm-check -s -u // ver dependencias que precisam ser atualizadas
