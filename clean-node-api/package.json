@@ -1,0 +1,69 @@
+{
+    "name": "clean-node-api",
+    "version": "1.0.0",
+    "description": "Aplicando Curso NodeJS Rest Api usando TDD , clean Architecture and Typescript",
+    "main": "index.js",
+    "scripts": {
+        "up": "npm run build && docker-compose up -d",
+        "down": "docker-compose down",
+        "start": "node dist/main/server.js",
+        "debug": "nodemon -L --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/main/server.js",
+        "build": "rimraf dist && tsc -p tsconfig-build.json",
+        "dev": "sucrase-node src/main/server.ts",
+        "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+        "test:verbose": "jest --passWithNoTests --runInBand",
+        "test:unit": "npm test -- --watch -c jest-unit-config.js",
+        "test:integration": "npm test -- --watch -c jest-integration-config.js",
+        "test:staged": "npm test -- --findRelatedTests ",
+        "test:ci": "npm test -- --coverage "
+    },
+    "keywords": [],
+    "author": "Luiz Felipe Royer Pereira",
+    "license": "ISC",
+    "devDependencies": {
+        "@shelf/jest-mongodb": "^1.2.3",
+        "@types/bcrypt": "^3.0.0",
+        "@types/jest": "^26.0.20",
+        "@types/jsonwebtoken": "^8.5.0",
+        "@types/node": "^14.14.28",
+        "@types/supertest": "^2.0.10",
+        "@types/validator": "^13.1.3",
+        "@typescript-eslint/eslint-plugin": "^4.15.1",
+        "eslint": "^7.20.0",
+        "eslint-config-standard-with-typescript": "^19.0.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "eslint-plugin-standard": "^5.0.0",
+        "git-commit-msg-linter": "^3.0.0",
+        "husky": "^4.3.8",
+        "jest": "^26.6.3",
+        "lint-staged": "^10.5.4",
+        "mockdate": "^3.0.2",
+        "rimraf": "^3.0.2",
+        "sucrase": "^3.17.1",
+        "supertest": "^6.1.3",
+        "ts-jest": "^26.5.1",
+        "typescript": "^4.1.5"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.11",
+        "@types/mongodb": "^3.6.7",
+        "@types/swagger-ui-express": "^4.1.2",
+        "bcrypt": "^5.0.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "module-alias": "^2.2.2",
+        "mongodb": "^3.6.4",
+        "nodemon": "^2.0.7",
+        "swagger-ui-express": "^4.1.6",
+        "validator": "^13.5.2"
+    },
+    "engines": {
+        "node": "12.x"
+    },
+    "_moduleAliases": {
+        "@": "dist"
+    }
+}

@@ -1,0 +1,34 @@
+git init
+npm init --y
+npm i -D git-commit-msg-linter  // Padronizar os logs do Git
+npm i -D typescript @types/node  // add typescript 
+npm install --save-dev eslint@7 eslint-plugin-standard@4 eslint-plugin-promise@4 eslint-plugin-import@2 eslint-plugin-node@11 @typescript-eslint/eslint-plugin@3 eslint-config-standard-with-typescript  // padronizar nomenclatura 
+npm i -D husky // auxilia nos comandos para testar o commit
+npm i -D lint-staged // rodar apenas arquivos alterados para teste
+npm i -D jest @types/jest ts-jest //para testes unitarios
+npm install jest --global  // rodar o jest --init na maquina
+npm i -g npm-check // valida se tem versao nova das dependencias do projeto
+npm-check -s -u // ver dependencias que precisam ser atualizadas
+npm i validator // Validar Email
+npm i @types/validator -D  // Validar Email
+npm i bcrypt // cryptografar as senhas
+npm i @types/bcrypt -D // cryptografar as senhas
+npm i -D @shelf/jest-mongodb  @types/mongodb // Banco de Dados  na minha maquina
+https://github.com/shelfio/jest-mongodb // ver para configurar o Banco
+npm i mongodb // Banco de Dados 
+npm i express
+npm i @types/express
+npm i sucrase -D //compilar javascript  para types
+npm i -D supertest @types/supertest // para enumar requisicao http
+npm i jsonwebtoken //  token 
+npm i @types/jsonwebtoken -D 
+npm i -D rimraf // Apagar a pasta dist
+npm i nodemon // ficar vendo alteracao e ajustando no container
+tsc -w // para rodar o nodemon e observar mudancas
+npm update // busca atualizar os pacotes 
+npm audit fix --f // atualizar as dependencias dos pacotes
+npm i mockdate -D // usado para mockar a data nos testes
+npm i module-alias // usar alias  @arquivo ao inves de todo o caminho /../../arquivo
+ver https://www.npmjs.com/package/module-alias  configuaracoes necessarias
+npm i swagger-ui-express // instalar swagger para documentar e auxiliar
+npm i @types/swagger-ui-express // instalar swagger para documentar e auxiliar

@@ -1,0 +1,78 @@
+crie uma pasta com o nome do projeto
+->Meu Projeto 
+
+Inicie o repositorio Git
+-> git init
+
+Criacao do package.json - add npm  
+-> npm init -y
+
+adiciona package de padronização dos commits do git
+-> npm i -D git-commit-msg-linter
+
+adicionar o .gitignore
+-> dentro add o node_modules
+
+adicionar a biblioteca typescript
+->npm i -D typescript @types/node  // add typescript 
+
+criar o tsconfig.json  // arquivo de configuracao do TS
+
+instalar padronizador de formatacao do projeto , espacos , : ; ...
+criar o arquivo .eslintrc.json e .eslintignore
+
+instalar o husky   // auxilia nos comandos para testar o commit
+-> npm i -D husky
+criar arquivo .husky.json na raiz do projeto
+instalar o lint-staged // rodar apenas arquivos alterados para teste
+-> npm i -D lint-staged 
+criar arquivo lintstagedrc.json na raiz do projeto
+
+Intalar o jest para aplicar teste Unitarios  
+-> npm i -D jest @types/jest ts-jest 
+rodar o jest --init  com tudo Yes
+->jest --init
+-> npm install jest --global  // OBS: rodar o jest --init na maquina
+adicionar os scripts de test no package.json
+
+Adicionar banco de Dados mongoDb
+->npm i -D @shelf/jest-mongodb  @types/mongodb 
+https://github.com/shelfio/jest-mongodb // ver para configurar o Banco
+->npm i mongodb // Banco de Dados 
+
+instalar Express
+-----xxxx --- 
+
+
+
+
+depois de configurar comece o projeto projeto
+->domain -> modeles -> Seu Model.ts
+
+depois crie o caso de uso
+->domain ->usecase-> Seu Caso de Uso.ts
+
+depois crie o data layer iniciando o testes
+->data -> usecase -> pasta nome seu Usecase -> bd-Seu-usecase.spec.ts
+
+depois crie a Interface do repositorio
+->data ->protocols -> pasta nome seu Repositorio -> seurepositorio-repository.ts
+
+depois crie o data layer clase
+->data -> usecase -> pasta nome seu Usecase -> bd-Seu-usecase.ts
+
+depois crie o repositorio
+->infra -> db -> mongoDb ou SQL -> pasta nome Repositorio ->arquivo-repositorio.ts
+
+depois crie o controller
+->presentation -> controller ->pasta nome Controller -> arquivo-controller.ts
+
+depois configurar as rotas no main começar com os testes
+-> main -> routes ->nome da rota : user-router.spec.ts
+->main -> routes ->nome da rota : user-router.ts
+
+criar o factory do controller
+->main ->factory ->pasta nome controller > nomecontroller-factory
+
+criar um factory para o usecase necessario para o controller
+-> main -> factory -> usecase -> pasta nomecontroller -> db-nomecontroller-factory
