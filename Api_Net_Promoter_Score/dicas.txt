@@ -1,0 +1,23 @@
+npm init -y
+npm add express
+npm add @types/express -D
+npm add typescript -D
+tsc --init
+npm add ts-node-dev -D // configure o script no package.json dev: 
+npm run dev 
+npm add typeorm reflect-metadata // conectar com o banco via orm
+npm add sqlite3 // banco em memoria
+npm install typeorm -g 
+typeorm migration:create -n CreateUsers // criar as tabelas do banco 
+typeorm migration:run // rodar o migration e criar as tabelas ou
+npm run typeorm migration:run
+npm run typeorm migration:revert // voltar a ultima migração
+npm add uuid -D // criar e controlar os identificadores 
+npm i jest @types/jest -D
+jest --init
+npm i ts-jest -D
+npm i supertest @types/supertest -D // para simular a chamada do servidor nos teste
+npm i nodemailer  @types/nodemailer // simular um envio de email
+npm i handlebars // para fazer o template em hml para o envio de email
+npm i yup // ajuda nas validacoes
+npm i express-async-errors // app poder lidar com os errors
