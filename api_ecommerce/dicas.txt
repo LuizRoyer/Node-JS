@@ -1,2 +1,13 @@
 npx create-next-app api_ecommerce // iniciar projeto
 npm install --save-dev typescript @types/react // rodar typescript no projeto
+git config --global core.editor code // abrir arquivo de congiguracao do git no vs code
+git congig --global --edit// configurar tecla atalho no git 
+// incluir no .gitconfig
+[alias]
+s= !git status -s
+c= !git add --all && git commit -m
+l= !git log --pretty=format:'%C(blue)%h %C(red)%d  %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+p= !git push
+ //---------------------
+ npm i -D git-commit-msg-linter // padronizar os commits
+ npm i -D typescript @types/node // adicionando biblioteca typescript
