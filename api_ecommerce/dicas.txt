@@ -9,5 +9,5 @@ c= !git add --all && git commit -m
 l= !git log --pretty=format:'%C(blue)%h %C(red)%d  %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 p= !git push
  //---------------------
- npm i -D git-commit-msg-linter // padronizar os commits
+ npm install git-commit-msg-linter --save-dev // padronizar os commits
  npm i -D typescript @types/node // adicionando biblioteca typescript
