@@ -1,0 +1,4 @@
+npx create-next-app cache_radis // criando projeto
+npm install --save-dev typescript @types/react //adicionando typescript
+npm i promise-redis // auxilia na comunicacao com o redis
+npm install --save mysql // adicionar para consultar o banco mysql

@@ -21,7 +21,7 @@ describe('Users', () => {
         await connection.dropDatabase()
         await connection.close();
     })
-
+    
     it('Should be able to create a new user', async () => {
         const response = await request(app).post('/users').send(mockUser)
         expect(response.status).toBe(201)

@@ -1,0 +1,9 @@
+npx create-next-app "nome do projeto" // criar aplicação Next
+npm install --save-dev typescript @types/node  // instalar Typescript no projeto
+npm i axios // para fazer requisição http
+npm run dev -- -p 3005 //para rodar em outra porta o projeto
+
+
+
+
+
