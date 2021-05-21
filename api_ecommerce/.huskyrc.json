@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm run test:ci"
+}
+  // "scripts": {
+  //  "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+  //   "lint": "eslint --ext js,jsx,ts,tsx --fix"
+  // } 
+}

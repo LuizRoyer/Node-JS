@@ -11,3 +11,9 @@ p= !git push
  //---------------------
  npm install git-commit-msg-linter --save-dev // padronizar os commits
  npm i -D typescript @types/node // adicionando biblioteca typescript
+ npm install --save-dev eslint eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node @typescript-eslint/eslint-plugin eslint-config-standard-with-typescript // padronizar nomenclatura  
+git commit --amend --no-edit // para juntar os commits 
+npm i -D husky //padrao de commit
+npm i -D lint-staged  //padrao de commit
+install -g jest // instalar global para testes unitarios
+npm i -D jest @types/jest ts-jest // testes unitarios
