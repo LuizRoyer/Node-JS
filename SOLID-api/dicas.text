@@ -1,0 +1,7 @@
+npm init -y
+npm i express  @types/express --git
+npm i typescript ts-node-dev -D
+tsc --init
+npm i uuidv4
+npm i nodemailer @types/nodemailer -D
+npm i mongodb @types/mongodb

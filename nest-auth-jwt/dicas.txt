@@ -1,0 +1,8 @@
+nest new  nest-auth --skip-git
+npm i --save @nestjs/typeorm typeorm mysql2 // Integrar com o banco de dados
+npm i bcrypt   // criptografar a senha 
+npm i -D @types/bcrypt // criptografar a senha 
+npm install --save @nestjs/passport passport passport-local // gerar o token 
+npm install --save-dev @types/passport-local  // gerar o token 
+npm install --save @nestjs/jwt passport-jwt // gerar o token 
+npm install --save-dev @types/passport-jwt // gerar o token 
