@@ -1,0 +1,3 @@
+mkdir node-str2
+npm init -y // iniciar o nodeJs
+npm i http express debug --save

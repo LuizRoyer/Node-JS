@@ -1,0 +1,7 @@
+npm init 
+npm i koa
+npm install mongodb 
+npm install @koa/router
+npm install koa-body
+
+

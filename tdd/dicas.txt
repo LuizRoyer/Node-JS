@@ -1,0 +1,7 @@
+mkdir tdd
+npm init -y // iniciar projeto
+npm i --save-dev standard  // validar codigo em tempo real
+npm install @hapi/hapi // igual o express
+npm install @hapi/lab // para testes
+ npm install @hapi/code
+ npm i --save-dev co

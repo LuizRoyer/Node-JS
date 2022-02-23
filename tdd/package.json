@@ -1,0 +1,25 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "see TDD with Hapi ",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -t 100 --verbose ",
+    "test:cov": "lab -r html -o coverage.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/code": "^8.0.3",
+    "@hapi/hapi": "^20.1.4",
+    "@hapi/lab": "^24.2.1",
+    "hapi": "^18.1.0",
+    "standard": "^16.0.3"
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "code": "^5.2.4",
+    "lab": "^18.0.2"
+  }
+}

@@ -1,0 +1,23 @@
+npm init --y
+npm i -g typescript
+tsc --init
+npm i --save-dev typescript
+npm i --save-dev @types/node
+npm i express  @types/express
+npm i --save-dev ts-node-dev
+
+add script at package.json  
+"dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+
+npm i --save pg  // banco de dados
+npm i --save-dev @types/pg
+
+
+elefante sql para criar um banco de dados
+https://api.elephantsql.com/console/185df28d-66e1-413d-a158-7c1e1a4456c5/details?
+
+npm i jsonwebtoken  // biblioteca para gerenciar o token jwt
+npm i @types/jsonwebtoken
+
+
+
