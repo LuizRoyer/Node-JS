@@ -1,0 +1,9 @@
+npm i typescript @types/node -D
+npm init -y  
+npx tsc --init   
+npm i jest @swc/ core @swc/jest -D 
+npx jest --init
+npm i ts-node  -D
+ npm i @types/jest -D
+add jest.config  script at transform
+
