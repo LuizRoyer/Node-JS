@@ -1,0 +1,11 @@
+npm init -y
+npm install typescript --save-dev
+npm install @types/node --save-dev
+npm install --save-dev ts-node nodemon
+npm install --save-dev rimraf
+npm i @types/cors
+npm i @types/dotenv
+npm i @types/express
+npm install openai
+npm i @dalenguyen/openai
+

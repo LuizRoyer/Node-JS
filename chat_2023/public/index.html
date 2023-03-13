@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> MAKE A CHAT</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+        integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="chat">
+        <input type="text" name="username" placeholder="Write your user name">
+        <div class="messages">
+
+        </div>
+        <input type="text" name="message" placeholder="Write your message" onfocus="this.value='';">
+        <button type="submit">Send</button>
+
+    </form>
+    <script type="text/javascript">
+        var socket = io('http://localhost:1337')
+
+
+        function renderMessage(message) {
+
+            $('.messages').append('<div class="message"><strong>' + message.author + '<strong/>: ' + message.message + '</div>')
+        }
+
+
+        socket.on('previousText', function (messages) {
+            messages.map(msg => renderMessage(msg))
+        })
+
+        socket.on('receivedText', function (message) {
+            renderMessage(message)
+        })
+
+        $('#chat').submit(function (event) {
+            event.preventDefault()
+
+
+            var author = $('input[name=username]').val()
+            var message = $('input[name=message]').val()
+
+            if (author.length && message.length) {
+                var text = {
+                    author,
+                    message
+                }
+                renderMessage(text)
+                socket.emit('sendText', text)
+
+            }
+        })
+    </script>
+</body>
+
+</html>

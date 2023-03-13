@@ -1,0 +1,16 @@
+#countPeople{
+
+    margin-left: 10px;
+    background-color: rgb(124, 241, 150);
+   
+}
+
+#save-btn{
+    background-color: green;
+}
+
+
+#increment-btn{
+    background-color: red;
+}
+

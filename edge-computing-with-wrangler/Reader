@@ -1,0 +1,12 @@
+->https://developers.cloudflare.com/workers/get-started/guide
+npm install -g wrangler
+wrangler login
+wrangler init <YOUR_WORKER>
+wrangler publish
+
+-> Banco https://upstash.com/
+
+npm i @upstash/redis
+
+
+
